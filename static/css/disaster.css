@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.head {
+    background-color: gainsboro;
+  text-align: center;
+}
+
+.detail {
+    border: 3px solid black;
+    margin: auto;
+    padding: 16px;
+    text-align: center;
+}
+
+.donate {
+    border: 3px solid black;
+    margin: auto;
+    padding: auto;
+    border
+}
+
+.name , .donate{
+    padding-left: 40%;
+
+}

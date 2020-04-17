@@ -1,0 +1,30 @@
+{% extends 'first_app\base.html' %}
+{% load static %}
+{% block body %}
+    <div class="head">
+    <h1>Drought Care</h1>
+    </div>
+
+    <div class="detail">
+        <div class=".trans">
+            <h2>Details</h2>
+            <p>A drought or drouth is an event of prolonged shortages in the water supply, whether atmospheric, surface water or ground water. A drought can last for months or years, or may be declared after as few as 15 days.
+            The lack of adequate precipitation, either rain or snow, can cause reduced soil moisture or groundwater, diminished stream flow, crop damage, and a general water shortage.
+            </p>
+        </div>
+    </div>
+
+    <div class="donate">
+        <h2>Donate</h2>
+        <label>Enter name </label>
+        <input type="textbox" name="name">
+        <p>
+        <label>Enter your appropiate Amount in the box</label>
+        <input type="textbox" name="money" >
+        </p>
+  <p><form action="{% url 'first_app:donate1' %}" class="donate-link" method="get">
+              <button type="submit">Donate</button>
+    </form>
+  </p>
+    </div>
+{% endblock %}

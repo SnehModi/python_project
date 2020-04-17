@@ -1,0 +1,31 @@
+{% extends 'first_app\base.html' %}
+{% load static %}
+{% block body %}
+    <div class="head">
+    <h1>Earthquake Care</h1>
+    </div>
+
+    <div class="detail">
+        <div class=".trans">
+            <h2>Details</h2>
+            <p>An earthquake (also known as a quake, tremor or temblor) is the shaking of the surface of the Earth resulting from a sudden release of energy in the Earth's lithosphere that creates seismic waves.
+            Earthquakes can range in size from those that are so weak that they cannot be felt to those violent enough to propel objects and people into the air, and wreak destruction across entire cities.
+            The seismicity, or seismic activity, of an area is the frequency, type, and size of earthquakes experienced over a period of time.
+            The word tremor is also used for non-earthquake seismic rumbling.</p>
+        </div>
+    </div>
+
+    <div class="donate">
+        <h2>Donate</h2>
+        <label>Enter name </label>
+        <input type="textbox" name="name">
+        <p>
+        <label>Enter your appropiate Amount in the box</label>
+        <input type="textbox" name="money" >
+        </p>
+  <p><form action="{% url 'first_app:donate1' %}" class="donate-link" method="get">
+              <button type="submit">Donate</button>
+    </form>
+  </p>
+    </div>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'first_app\base.html' %}
+{% load static %}
+{% block body %}
+    <div class="head">
+    <h1>Landslide Care</h1>
+    </div>
+
+    <div class="detail">
+        <div class=".trans">
+            <h2>Details</h2>
+            <p>A landslide is the movement of rock, earth, or debris down a sloped section of land. Landslides are caused by rain, earthquakes, volcanoes, or other factors that make the slope unstable. Geologists, scientists who study the physical formations of the Earth, sometimes describe landslides as one type of mass wasting.
+               The term landslide or less frequently, landslip, refers to several forms of mass wasting that include a wide range of ground movements, such as rockfalls, deep-seated slope failures, mudflows, and debris flows.
+            </p>
+        </div>
+    </div>
+
+    <div class="donate">
+        <h2>Donate</h2>
+        <label>Enter name </label>
+        <input type="textbox" name="name">
+        <p>
+        <label>Enter your appropiate Amount in the box</label>
+        <input type="textbox" name="money" >
+        </p>
+  <p><form action="{% url 'first_app:donate1' %}" class="donate-link" method="get">
+              <button type="submit">Donate</button>
+    </form>
+  </p>
+    </div>
+{% endblock %}

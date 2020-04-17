@@ -1,0 +1,30 @@
+{% extends 'first_app\base.html' %}
+{% load static %}
+{% block body %}
+    <div class="head">
+    <h1>Flood Care</h1>
+    </div>
+
+    <div class="detail">
+        <div class=".trans">
+            <h2>Details</h2>
+            <p>Floods are the most frequent type of natural disaster and occur when an overflow of water submerges land that is usually dry. Floods are often caused by heavy rainfall,
+                rapid snowmelt or a storm surge from a tropical cyclone or tsunami in coastal areas. In the sense of "flowing water", the word may also be applied to the inflow of the tide. Floods are an area of study of the discipline hydrology and are of significant concern in agriculture, civil engineering and public health.
+            </p>
+        </div>
+    </div>
+
+    <div class="donate">
+        <h2>Donate</h2>
+        <label>Enter name </label>
+        <input type="textbox" name="name">
+        <p>
+        <label>Enter your appropiate Amount in the box</label>
+        <input type="textbox" name="money" >
+        </p>
+  <p><form action="{% url 'first_app:donate1' %}" class="donate-link" method="get">
+              <button type="submit">Donate</button>
+    </form>
+  </p>
+    </div>
+{% endblock %}

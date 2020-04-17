@@ -1,0 +1,71 @@
+body{
+    padding-top: 70px;
+    background-color: aliceblue;
+}
+
+
+.b {
+    margin-top: 10px;
+}
+
+.d {
+    color: whitesmoke;
+}
+
+.navbar-light .navbar-brand {
+    color: whitesmoke;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: whitesmoke;
+}
+
+.nav-item {
+    font-size: 20px;
+}
+
+.jumbotron { 
+   color:  #2c3e50;
+   background: skyblue; 
+   text-align: center;
+}
+
+.bg-warning {
+    text-align: center;
+    width: 100%;
+}
+
+.space {
+    padding: 20px 0;
+}
+
+.about {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.col-lg-12 {
+    margin: 20px 0;
+}
+
+#sub {
+    text-align: center;
+}
+
+#car {
+    background: white;
+    margin-bottom: 10px;
+}
+
+.my-4 {
+    margin-bottom: 3px;
+    width: 50%;
+}
+ 
+.z {
+    align-self: center;
+}
+
+.fgh {
+    text-align: center;
+}

@@ -1,0 +1,64 @@
+{% extends 'first_app\base.html' %}
+{% load static %}
+{% block body %}
+    <div class="jumbotron">
+      <h1>परोपकारार्थं इदं बुद्धी | ब्रह्मज्ञानर्थं जीवनम् ||</h1>
+      <h4>one reaches supreme knowledge through service to others</h4>
+    </div>
+
+<div class="row">
+  <div class="col-lg-6">
+    <div class="card"><div class="card">
+  <img src="{% static 'images\flood.jpg' %}" alt="flood" style="width:100%">
+  <h1>Flood Care</h1>
+  <p class="price">Your small help could make a huge difference in someone's life ... we think so .. do you ?</p>
+  <p><form action="{% url 'first_app:donate2' %}" class="donate-link" method="get">
+              <button type="submit">Donate</button>
+    </form>
+  </p>
+</div></div>
+  </div>
+
+  <div class="col-lg-6">
+    <div class="card"><div class="card">
+  <img src="{% static 'images\landslide.jpg' %}" alt="landslide" style="width:100%">
+  <h1>Landslide Care</h1>
+  <p class="price">Your small help could make a huge difference in someone's life ... we think so .. do you ?</p>
+  <p><form action="{% url 'first_app:donate4' %}" class="donate-link" method="get">
+              <button type="submit">Donate</button>
+    </form>
+  </p>
+</div></div>
+  </div>
+
+</div>
+
+<div class="row">
+
+<div class="col-lg-6">
+    <div class="card"><div class="card">
+  <img src="{% static 'images\drought.jpg' %}" alt="drought" style="width:100%">
+  <h1>Drought Care</h1>
+  <p class="price">Your small help could make a huge difference in someone's life ... we think so .. do you ?</p>
+  <p><form action="{% url 'first_app:donate3' %}" class="donate-link" method="get">
+              <button type="submit">Donate</button>
+    </form>
+  </p>
+</div></div>
+  </div>
+
+  <div class="col-lg-6">
+    <div class="card"><div class="card">
+  <img src="{% static 'images\earthquake.jpg' %}" alt="earthquake" style="width:100%">
+  <h1>Earthquake Care</h1>
+  <p class="price">Your small help could make a huge difference in someone's life ... we think so .. do you ?</p>
+  <p><form action="{% url 'first_app:donate' %}" class="donate-link" method="get">
+              <button type="submit">Donate</button>
+    </form>
+  </p>
+</div></div>
+  </div>
+</div>
+
+{% endblock %}
+
